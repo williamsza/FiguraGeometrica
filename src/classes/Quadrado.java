@@ -1,6 +1,6 @@
 package classes;
 
-public class Quadrado {
+public class Quadrado implements FiguraGeometrica {
     private int lado;
 
     public Quadrado(int lado) {
@@ -9,7 +9,7 @@ public class Quadrado {
     }
 
     // lado ao quadrado
-    public double gerarAreaQuadrado() {
+    public double calcularArea() {
         return Math.pow(lado, 2);
 
     }
